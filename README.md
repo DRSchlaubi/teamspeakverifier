@@ -24,15 +24,15 @@ This plugin has an integrated API when you you want to use it just add the plugi
 `depend: [TeamspeakVerifyer]`
 
 Methods:
-`//Tests of Teamspeak DBID is verified`
-`TeamspeakVerifyerAPI.isVerified(String identity)`
-`//Tests of Player is verified`
-`TeamspeakVerifyerAPI.isVerified(Player player)`
-`//Tests of ProxiedPlayer is verified`
-`TeamspeakVerifyerAPI.isVerified(ProxiedPlayer player)`
-`//Retrives MCUsername from TeamSpeak DBID`
-`TeamspeakVerifyerAPI.getUserName(String id)`
-`//Retrives TeamSpeak DBID from Player`
-`TeamspeakVerifyerAPI.getDatabaseId(Player player)`
-`//Retrives TeamSpeak DBID from Player`
-`TeamspeakVerifyerAPI.getDatabaseId.getDatabaseId(ProxiedPlayer player)`
+```//Tests of Teamspeak DBID is verified
+TeamspeakVerifyerAPI.isVerified(String identity)
+//Tests of Player is verified
+TeamspeakVerifyerAPI.isVerified(Player player)
+//Tests of ProxiedPlayer is verified`
+TeamspeakVerifyerAPI.isVerified(ProxiedPlayer player)
+//Retrives MCUsername from TeamSpeak DBID
+TeamspeakVerifyerAPI.getUserName(String id)
+//Retrives TeamSpeak DBID from Player
+TeamspeakVerifyerAPI.getDatabaseId(Player player)
+//Retrives TeamSpeak DBID from Player
+TeamspeakVerifyerAPI.getDatabaseId.getDatabaseId(ProxiedPlayer player)```
