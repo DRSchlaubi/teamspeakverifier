@@ -8,16 +8,10 @@ public class TeamspeakVerifyerAPI {
 
 
     public static boolean isVerified(Player player){
-        if(MySQL.userExists(player)){
-            return true;
-        }
-        return false;
+        return MySQL.userExists(player);
     }
     public static boolean isVerified(String identity){
-        if(MySQL.userExists(identity)){
-            return true;
-        }
-        return false;
+        return MySQL.userExists(identity);
     }
 
     public static String getUserName(String id){
@@ -25,17 +19,14 @@ public class TeamspeakVerifyerAPI {
     }
 
     public static String getDatabaseId(Player player){
-        return MySQL.getValue(player, "uuid");
+        return MySQL.getValue(player, "identity");
     }
 
     public static String getDatabaseId(ProxiedPlayer player){
-        return MySQL.getValue(player, "uuid");
+        return MySQL.getValue(player, "identity");
     }
 
     public static boolean isVerified(ProxiedPlayer player){
-        if(MySQL.userExists(player)){
-            return true;
-        }
-        return false;
+        return MySQL.userExists(player);
     }
 }
