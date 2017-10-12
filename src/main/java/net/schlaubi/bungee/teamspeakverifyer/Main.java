@@ -70,7 +70,7 @@ public class Main extends Plugin {
         try {
             if (!resourceFile.exists()) {
                 resourceFile.createNewFile();
-                try (InputStream in = plugin.getResourceAsStream("config_bungee.yml");
+                try (InputStream in = plugin.getResourceAsStream(resource);
                      OutputStream out = new FileOutputStream(resourceFile)) {
                      ByteStreams.copy(in, out);
                 }
