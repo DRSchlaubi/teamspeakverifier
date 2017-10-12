@@ -1,0 +1,7 @@
+name: TeamspeakVerifyer
+author: Schlaubi
+version: 1.0
+main: net.schlaubi.bungee.teamspeakverifyer.Main
+command:
+  teamspeak:
+    description: HALLO!

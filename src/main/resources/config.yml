@@ -1,0 +1,39 @@
+MySQL:
+  host: localhost
+  port: 3306
+  user: root
+  database: minecraft
+  password: ''
+
+
+TeamSpeak:
+  ip: localhost
+  port: 10011
+  user: serveradmin
+  password: ''
+  virtualserver: 1
+  name: TeamSpeakBot
+
+Roles:
+## If you are using BungeeCord you must give the user the permission "group.<groupname>"
+  defaultrole: 7
+  group:
+    admin: 1
+    moderator: 2
+    premium: 1
+Messages:
+  verify: '&7[&aTeamSpeak&7]&r Please send this code to our bot %code%'
+  running: '&7[&aTeamSpeak&7]&c There is already a verfication request in our system for you your code was %code%'
+  verified: '&7[&aTeamSpeak&7]&c You are already verified use /teamspeak unlink to unlink your account'
+  notverified: '&7[&aTeamSpeak&7]&c You are not verified use /teamspeak verify to verify your account'
+  unlinked: '&7[&aTeamSpeak&7]&c Successfully unlinked'
+  ts3join: 'Hey %user%, you are not verified yet if you want to be use /teamspeak verify ingame'
+  invalidcode: 'Your code was invalid!'
+  success: 'Successfully linked with %minecraft%'
+  updated: '&7[&aTeamSpeak&7]&c Successfully updated teamspeak ranks'
+  help: 'Commands: %nl /teamspeak verify %nl /teamspeak unlink %nl /teamspeak update'
+BCRoles:
+## Cause there is no good method for gettings user group you need to list your groups here
+  - admin
+  - moderator
+  - premium

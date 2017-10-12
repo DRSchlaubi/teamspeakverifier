@@ -1,0 +1,8 @@
+name: TeamspeakVerifyer
+author: Schlaubi
+version: 1.0
+main: net.schlaubi.spigot.teamspeakverifyer.Main
+softdepend: [Vault]
+commands:
+  teamspeak:
+    description: TeamSpeak command
