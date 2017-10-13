@@ -9,13 +9,13 @@ With this plugin you can link your Minecraft and Teamspeak accounts and roles/ra
 * - Vault and an suppoerted permission plugin (Spigot only)
 
 
-![Commands](https://imgur.com/1sDviDZ"Commands")
+![Commands](https://i.imgur.com/1sDviDZ.pngZ"Commands")
 * /teamspeak verify - Verify command 
 * /teamspeak unlink - "Unverify" command
 * /teamspeak update - Updates roles when you asigned a new role to the user
 * /teamspeak reload - reload command Permission: ts.reload
 
-*![Installation](https://imgur.com/eeCQv3F"Installation")
+*![Installation](https://i.imgur.com/eeCQv3F.png"Installation")
 * Download the newest version of the plugin and place it in your plugins/ folder
 * Restart your server
 * Modify config.yml
