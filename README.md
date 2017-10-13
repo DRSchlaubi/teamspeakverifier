@@ -2,7 +2,7 @@
 Thaks to github.com/zekroTJA for the nice banners
 **What does this plugin do?**
 With this plugin you can link your Minecraft and Teamspeak accounts and roles/ranks<br>
-![Download](https://i.imgur.com/JlHdaAs.png"https://www.spigotmc.org/resources/teamspeakverifyer-link-minecraft-teamspeak-ranks-bungeecord-spigot-support-mysql-with-api.48302/")
+<a href="https://www.spigotmc.org/resources/teamspeakverifyer-link-minecraft-teamspeak-ranks-bungeecord-spigot-support-mysql-with-api.48302/"><img src="https://i.imgur.com/JlHdaAs.png"></a><br>
 **Requirements**
 * - MySQL database
 * - TeamSpeak query access
