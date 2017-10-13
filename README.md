@@ -2,7 +2,7 @@
 Thaks to github.com/zekroTJA for the nice banners
 **What does this plugin do?**
 With this plugin you can link your Minecraft and Teamspeak accounts and roles/ranks
-
+![Download](https://i.imgur.com/JlHdaAs.png"Download")(https://www.google.com)
 **Requirements**
 * - MySQL database
 * - TeamSpeak query access
