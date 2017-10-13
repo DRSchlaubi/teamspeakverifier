@@ -1,19 +1,21 @@
-(This Plugin is made with the TeamSpeakAPI of https://github.com/TheHolyWaffle/TeamSpeak-3-Java-API)
+(This Plugin is made with the TeamSpeakAPI of https://github.com/TheHolyWaffle/TeamSpeak-3-Java-API)<br>
+**Thanks to <a href="http://github.com/zekroTJA">zekro</a> for the nice banners**
 **What does this plugin do?**
-With this plugin you can link your Minecraft and Teamspeak accounts and roles/ranks
-
+With this plugin you can link your Minecraft and Teamspeak accounts and roles/ranks<br>
+<a href="https://www.spigotmc.org/resources/teamspeakverifyer-link-minecraft-teamspeak-ranks-bungeecord-spigot-support-mysql-with-api.48302/"><img src="https://i.imgur.com/JlHdaAs.png"></a><br>
 **Requirements**
 * - MySQL database
 * - TeamSpeak query access
 * - Vault and an suppoerted permission plugin (Spigot only)
 
-**Commands**
+
+![Commands](https://i.imgur.com/1sDviDZ.pngZ"Commands")
 * /teamspeak verify - Verify command 
 * /teamspeak unlink - "Unverify" command
 * /teamspeak update - Updates roles when you asigned a new role to the user
 * /teamspeak reload - reload command Permission: ts.reload
 
-**Installation**
+*![Installation](https://i.imgur.com/eeCQv3F.png"Installation")
 * Download the newest version of the plugin and place it in your plugins/ folder
 * Restart your server
 * Modify config.yml
