@@ -61,7 +61,7 @@ public class CommandTeamspeak extends Command {
                         pp.sendMessage(cfg.getString("Messages.notverified").replace("&", "§"));
                     } else {
                         Main.api.removeClientFromServerGroup(cfg.getInt("Roles.defaultrole"), Integer.parseInt(MySQL.getValue(pp, "identity")));
-                        cfg.getStringList("BCRoles").forEach(i -> {
+                        cfg.getSection("Roles").getKeys().forEach(i -> {
                             if(pp.hasPermission("group." + i)) {
                                 Main.api.removeClientFromServerGroup(cfg.getInt("Roles.group." + i), Integer.parseInt(MySQL.getValue(pp, "identity")));
                             }
@@ -78,7 +78,7 @@ public class CommandTeamspeak extends Command {
                         pp.sendMessage(cfg.getString("Messages.notverified").replace("&", "§"));
                     } else {
                         System.out.println(MySQL.getValue(pp, "identity"));
-                        cfg.getStringList("BCRoles").forEach(i -> {
+                        cfg.getSection("Roles.group").getKeys().forEach(i -> {
                             if(pp.hasPermission("group." + i)) {
                                 if(pp.hasPermission("group." + i)) {
                                     Main.api.addClientToServerGroup(cfg.getInt("Roles.group." + i), Integer.parseInt(MySQL.getValue(pp, "identity")));
