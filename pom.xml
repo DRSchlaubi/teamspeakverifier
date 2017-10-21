@@ -4,7 +4,7 @@
     <groupId>net.schlaubi</groupId>
     <artifactId>tsverifier</artifactId>
     <version>1.1-SNAPSHOT</version>
-    <name>teamspeakverifyer</name>
+    <name>teamspeakverifier</name>
     <url>http://maven.apache.org</url>
 
     <properties>
