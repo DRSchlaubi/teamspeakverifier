@@ -3,7 +3,6 @@ package net.schlaubi.bungee.teamspeakverifyer;
 import com.github.theholywaffle.teamspeak3.TS3Api;
 import com.github.theholywaffle.teamspeak3.TS3Config;
 import com.github.theholywaffle.teamspeak3.TS3Query;
-import com.github.theholywaffle.teamspeak3.api.event.TS3EventType;
 import com.google.common.io.ByteStreams;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.plugin.Plugin;
@@ -20,6 +19,7 @@ public class Main extends Plugin {
     public static Main instance;
     public static Configuration configuration;
     public static TS3Api api;
+    TS3Query query;
     @Override
     public void onEnable() {
         instance = this;
@@ -45,7 +45,7 @@ public class Main extends Plugin {
         final TS3Config config = new TS3Config();
         config.setHost(cfg.getString("TeamSpeak.ip"));
         config.setQueryPort(cfg.getInt("TeamSpeak.port"));
-        final TS3Query query = new TS3Query();
+        query = new TS3Query();
         query.connect();
         api = query.getApi();
         api.login(cfg.getString("TeamSpeak.user"), cfg.getString("TeamSpeak.password"));
@@ -60,6 +60,7 @@ public class Main extends Plugin {
     @Override
     public void onDisable() {
         MySQL.disconnect();
+        query.exit();
     }
 
     private static File loadResource(Plugin plugin, String resource) {

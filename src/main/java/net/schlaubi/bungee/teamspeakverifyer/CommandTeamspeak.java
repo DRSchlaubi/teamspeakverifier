@@ -1,19 +1,18 @@
 package net.schlaubi.bungee.teamspeakverifyer;
 
+import com.google.common.collect.ImmutableSet;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.ProxyServer;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Command;
+import net.md_5.bungee.api.plugin.TabExecutor;
 import net.md_5.bungee.config.Configuration;
 import net.schlaubi.util.MySQL;
 
-import java.util.HashMap;
-import java.util.Random;
-import java.util.Timer;
-import java.util.TimerTask;
+import java.util.*;
 
 
-public class CommandTeamspeak extends Command {
+public class CommandTeamspeak extends Command implements TabExecutor{
 
     public static HashMap<String, String> users = new HashMap<>();
     private Configuration cfg = Main.getConfiguration();
@@ -89,11 +88,30 @@ public class CommandTeamspeak extends Command {
                     }
                 }
             } else {
-                pp.sendMessage(cfg.getString("Messages.help").replace("&", "§").replace("%nl%", "/n"));
+                pp.sendMessage(cfg.getString("Messages.help").replace("&", "§").replace("%nl", "/n"));
 
             }
         } else {
             ProxyServer.getInstance().getConsole().sendMessage("§4§lYou must be a player to run this command");
         }
+    }
+
+    @Override
+    public Iterable<String> onTabComplete(CommandSender sender, String[] args) {
+        String[] subcommands = {"unlink", "reload", "update", "verify"};
+        ProxiedPlayer pp = (ProxiedPlayer) sender;
+        if(args.length > 1 || args.length == 0){
+            return ImmutableSet.of();
+        }
+        Set<String> matches = new HashSet<>();
+        if(args.length > 0){
+            for(String subcommand : subcommands){
+                if(subcommand.startsWith(args[0])){
+                    matches.add(subcommand);
+                }
+            }
+            return matches;
+        }
+        return null;
     }
 }

@@ -19,6 +19,7 @@ public class Main extends JavaPlugin {
     public static Main instance;
     public static TS3Api api;
     private static Permission perms;
+    TS3Query query;
 
 
     @Override
@@ -47,6 +48,7 @@ public class Main extends JavaPlugin {
     @Override
     public void onDisable() {
         MySQL.disconnect();
+        query.exit();
     }
 
     private void connectTeamSpeak() {
@@ -54,7 +56,7 @@ public class Main extends JavaPlugin {
             final TS3Config config = new TS3Config();
             config.setHost(cfg.getString("TeamSpeak.ip"));
             config.setQueryPort(Integer.parseInt(cfg.getString("TeamSpeak.port")));
-            final TS3Query query = new TS3Query(config);
+            query = new TS3Query(config);
             query.connect();
 
             api = query.getApi();
