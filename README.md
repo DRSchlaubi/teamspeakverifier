@@ -1,12 +1,12 @@
 (This Plugin is made with the TeamSpeakAPI of https://github.com/TheHolyWaffle/TeamSpeak-3-Java-API)<br>
 **Thanks to <a href="http://github.com/zekroTJA">zekro</a> for the nice banners**
 **What does this plugin do?**
-With this plugin you can link your Minecraft and Teamspeak accounts and roles/ranks<br>
+You can link your Minecraft and Teamspeak accounts with this Plugin.You can sync the roles/ranks.<br>
 <a href="https://www.spigotmc.org/resources/teamspeakverifyer-link-minecraft-teamspeak-ranks-bungeecord-spigot-support-mysql-with-api.48302/"><img src="https://i.imgur.com/JlHdaAs.png"></a><br>
 **Requirements**
 * - MySQL database
 * - TeamSpeak query access
-* - Vault and an suppoerted permission plugin (Spigot only)
+* - Vault and an supported permission plugin (Spigot only)
 
 
 ![Commands](https://i.imgur.com/1sDviDZ.pngZ"Commands")
@@ -22,7 +22,7 @@ With this plugin you can link your Minecraft and Teamspeak accounts and roles/ra
 * Restart your server again
 * DONE
 **Developer API**
-This plugin has an integrated API when you you want to use it just add the plugin to your project and the following line to your plugin/bungee.yml
+This plugin has an integrated API so when you want to use it just add the plugin to your project and the following line to your plugin/bungee.yml
 `depend: [TeamspeakVerifyer]`
 
 Methods:
